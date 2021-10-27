@@ -153,6 +153,8 @@ export declare interface DataGridProps<R, SR = unknown, K extends Key = Key> ext
     onScroll?: Maybe<(event: React.UIEvent<HTMLDivElement>) => void>;
     /** Called when a column is resized */
     onColumnResize?: Maybe<(idx: number, width: number) => void>;
+    /** Function called whenever selected cell is changed */
+    onSelectedCellChange?: Maybe<(position: Position) => void>;
     /**
      * Toggles and modes
      */
